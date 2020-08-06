@@ -21,7 +21,7 @@
             <Style TargetType="NavigationPage">
                 <Setter Property="BarBackgroundColor" Value=" { d:StaticResource MaliGreen } "/>
             </Style>    
-
+    
             <!-- Explicit styles -->
 
             <Style x:Key="importantButton" TargetType="Button">

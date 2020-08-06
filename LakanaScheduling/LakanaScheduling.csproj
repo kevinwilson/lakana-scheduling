@@ -17,6 +17,9 @@
     <PackageReference Include="Microsoft.Azure.Mobile.Client" Version="4.1.2" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Remove="MyMasterDetailPageMaster.xaml.cs" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Update="ViewEditVillageSchedulePage.xaml.cs">
       <DependentUpon>ViewEditVillageSchedulePage.xaml</DependentUpon>
     </Compile>

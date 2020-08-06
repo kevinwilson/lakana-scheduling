@@ -22,22 +22,10 @@ namespace LakanaScheduling
 
         public App(string databaseLocation)
         {
-            DatabaseLocation = databaseLocation;
             InitializeComponent();
+            DatabaseLocation = databaseLocation;
             string setupUserResult = LakanaScheduling.Utilities.TabletUsers.CreateDefaultUser();
-
-            if (!IsLoggedIn)
-            {
-                MainPage = new NavigationPage(new LoginPage());
-            }
-            else
-            {
-
-                MainPage = new NavigationPage(new MainPage(setupUserResult));
-            }
-
-
-
+            MainPage = new MainMasterDetailPage();
         }
 
         protected override void OnStart()
