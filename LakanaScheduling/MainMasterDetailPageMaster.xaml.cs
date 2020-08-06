@@ -33,11 +33,11 @@ namespace LakanaScheduling
             {
                 MenuItems = new ObservableCollection<MainMasterDetailPageMenuItem>(new[]
                 {
-                    new MainMasterDetailPageMenuItem { Id = 0, Title = "Page 1" },
-                    new MainMasterDetailPageMenuItem { Id = 1, Title = "Page 2" },
-                    new MainMasterDetailPageMenuItem { Id = 2, Title = "Page 3" },
-                    new MainMasterDetailPageMenuItem { Id = 3, Title = "Page 4" },
-                    new MainMasterDetailPageMenuItem { Id = 4, Title = "Page 5" },
+                    new MainMasterDetailPageMenuItem { Id = 0, Title = "Home" },
+                    new MainMasterDetailPageMenuItem { Id = 1, Title = "Users" },
+                    new MainMasterDetailPageMenuItem { Id = 2, Title = "Schedule" },
+                    new MainMasterDetailPageMenuItem { Id = 3, Title = "Data collectors" },
+       
                 });
             }
 
