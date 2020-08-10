@@ -11,18 +11,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.7.0.1239" />
+    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1269" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
-    <PackageReference Include="sqlite-net-pcl" Version="1.7.335" />
     <PackageReference Include="Microsoft.Azure.Mobile.Client" Version="4.1.2" />
+    <PackageReference Include="SQLiteNetExtensions" Version="2.1.0" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="MyMasterDetailPageMaster.xaml.cs" />
+    <Compile Remove="Views\MainMasterDetailPage.xaml.cs" />
+    <Compile Remove="Views\MainMasterDetailPageDetail.xaml.cs" />
+    <Compile Remove="AddEditUser.xaml.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="ViewEditVillageSchedulePage.xaml.cs">
-      <DependentUpon>ViewEditVillageSchedulePage.xaml</DependentUpon>
-    </Compile>
     <Compile Update="Resources\Translations.fr.Designer.cs">
       <DependentUpon>Translations.fr.resx</DependentUpon>
     </Compile>
@@ -32,11 +32,16 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
-    <Folder Include="Model\" />
-    <Folder Include="Utilities\" />
+    <Folder Include="Models\" />
+    <Folder Include="Resources\Images\" />
+    <Folder Include="Views\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Resources\Translations.fr" />
+    <None Remove=".DS_Store" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Views\ViewEditVillageSchedulePage.xaml" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Update="Resources\AppResources.resx">

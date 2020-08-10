@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="LakanaScheduling.Views.LoginPage">
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <Image Source="logo2a.jpg" WidthRequest="250" />
+            <Label Text="Login" HorizontalOptions="Center" FontSize="28" Margin="0, 20, 0, 0"/>
+            <Label Text="Enter your username and PIN below and click Login" FontSize="Medium" HorizontalTextAlignment="Center" />
+            <Entry x:Name="Username" Placeholder="Username" />
+            <Entry x:Name="Password" IsPassword="True" Placeholder="PIN"/>
+            <Button Text="Login" x:Name="Login" Clicked="Login_Clicked" />
+            <Label x:Name="LoggedInStatus" HorizontalTextAlignment="Center" Style="{ d:StaticResource ErrorMessage }"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using LakanaScheduling.Model;
+using LakanaScheduling.Models;
 using SQLite;
 
 using Xamarin.Forms;

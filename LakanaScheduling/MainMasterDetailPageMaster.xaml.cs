@@ -6,7 +6,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
-
+using LakanaScheduling.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -34,7 +34,7 @@ namespace LakanaScheduling
                 MenuItems = new ObservableCollection<MainMasterDetailPageMenuItem>(new[]
                 {
                     new MainMasterDetailPageMenuItem { Id = 0, Title = "Home" },
-                    new MainMasterDetailPageMenuItem { Id = 1, Title = "Users" },
+                    new MainMasterDetailPageMenuItem { Id = 1, Title = "Users", TargetType = typeof(Views.ManageUsers) },
                     new MainMasterDetailPageMenuItem { Id = 2, Title = "Schedule" },
                     new MainMasterDetailPageMenuItem { Id = 3, Title = "Data collectors" },
        

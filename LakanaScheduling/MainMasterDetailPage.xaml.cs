@@ -19,13 +19,14 @@ namespace LakanaScheduling
 
             if (!App.IsLoggedIn)
             {
-                Navigation.PushModalAsync(new LoginPage());
+                Navigation.PushModalAsync(new Views.LoginPage());
             }
            
         }
 
         private void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
+
             var item = e.SelectedItem as MainMasterDetailPageMenuItem;
             if (item == null)
                 return;
@@ -33,7 +34,7 @@ namespace LakanaScheduling
             var page = (Page)Activator.CreateInstance(item.TargetType);
             page.Title = item.Title;
 
-            Detail = new NavigationPage(new ManageUsers());
+            Detail = new NavigationPage(page);
             IsPresented = false;
 
             MasterPage.ListView.SelectedItem = null;

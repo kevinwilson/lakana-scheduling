@@ -31,7 +31,7 @@
               <Style x:Key="ErrorMessage" TargetType="Label">
                 <Setter Property="TextColor" Value="{ d:StaticResource MaliRed }" />
                 <Setter Property="FontSize" Value="Medium" />
-            </Style>
+              </Style>
  
         </ResourceDictionary>
     </Application.Resources>
